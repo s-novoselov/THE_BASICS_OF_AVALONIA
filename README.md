@@ -1,2 +1,1 @@
-# THE_BASICS_OF_AVALONIA
-Training manual "BASIS OF CROSS-PLATFORM SOFTWARE DEVELOPMENT ON AVALONIA"
+В даному репозиторії знаходяться вихідні файли до навчального посбіника "ОСНОВИ РОЗРОБКИ КРОСПЛАТФОРМНОГО ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ НА AVALONIA"
