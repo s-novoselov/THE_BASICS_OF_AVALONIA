@@ -1,0 +1,98 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
+        x:Class="TestApplication_1.MainWindow"
+        Title="TestApplication_1">
+
+
+
+		<DockPanel>
+
+			<Menu DockPanel.Dock="Top">
+				<MenuItem Header="_FILE">
+					<MenuItem Header="_New"/>
+					<MenuItem Header="_Open...">
+						<MenuItem.Icon>
+							<Image Source="/Assets/Open.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<MenuItem Header="Save"/>
+				</MenuItem>
+				<MenuItem Header="EDIT">
+					<MenuItem Header="Copy"/>
+					<MenuItem Header="Paste"/>
+				</MenuItem>
+			</Menu>
+			
+
+			<Grid ColumnDefinitions="Auto, 20, Auto"
+				  RowDefinitions="Auto, Auto, Auto"
+				  HorizontalAlignment="Center"
+				  VerticalAlignment="Center">
+			<!-- First column -->
+
+			<TextBlock Text="Select Item:"
+							Grid.Row="0"
+							Grid.Column="0"
+							Height="17"/>
+
+			<ListBox x:Name="TheListBox"
+					Grid.Row="1"
+					Margin="0,10,0,0">
+				<ListBoxItem Content="Item 1"/>
+				<ListBoxItem Content="Item 2"/>
+				<ListBoxItem Content="Item 3"/>
+				<ListBoxItem Content="Item 4"/>
+			</ListBox>
+
+			<ComboBox VerticalAlignment="Top"
+			  Grid.Row="2"
+			  SelectedIndex="{Binding Path=SelectedIndex,
+ 				ElementName=TheListBox, Mode=TwoWay}"
+					Margin="0,10,0,0"
+					Padding="10,5">
+				<ComboBoxItem Content="Item 1"/>
+				<ComboBoxItem Content="Item 2"/>
+				<ComboBoxItem Content="Item 3"/>
+				<ComboBoxItem Content="Item 4"/>
+			</ComboBox>
+
+			<!-- Second column -->
+
+			<ToggleButton x:Name="TheToggleButton"
+					Grid.Row="0"
+					Grid.Column="2"
+					Content="Toggle Button with ContextMenu">
+				<ToggleButton.ContextMenu>
+					<ContextMenu>
+						<MenuItem Header="Item1">
+							<MenuItem Header="SubItem1"/>
+							<MenuItem Header="SubItem2"/>
+						</MenuItem>
+						<MenuItem Header="Item2"/>
+						<MenuItem Header="Item3"/>
+						<MenuItem Header="Item4"/>
+					</ContextMenu>
+				</ToggleButton.ContextMenu>
+			</ToggleButton>
+
+			<CheckBox Content="Check Box"
+					VerticalAlignment="Top"
+					Grid.Row="1"
+					Grid.Column="2"
+					IsChecked="{Binding Path=IsChecked, ElementName=TheToggleButton}"/>
+
+			<CheckBox Content="Three State Check Box"
+					Grid.Row="2"
+					Grid.Column="2"
+					IsThreeState="True"/>
+
+		</Grid>
+			
+		</DockPanel>
+		
+		
+	
+</Window>

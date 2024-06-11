@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
+        x:Class="TestApplication_1.MainWindow"
+        Title="TestApplication_1">
+
+	<Grid Grid.Row="1" 
+		HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+		
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Text="Select Item:"
+                Grid.Row="0"
+                Height="17"/>
+		<ListBox x:Name="TheListBox"
+				Grid.Row="1"
+				Margin="0,10,0,0">
+			<ListBoxItem Content="Item 1"/>
+			<ListBoxItem Content="Item 2"/>
+			<ListBoxItem Content="Item 3"/>
+			<ListBoxItem Content="Item 4"/>
+		</ListBox>
+		
+		<ComboBox VerticalAlignment="Top"
+          Grid.Row="2"
+          SelectedIndex="{Binding Path=SelectedIndex,
+ 				ElementName=TheListBox}"
+				Margin="0,10,0,0"
+				Padding="10,5">
+			<ComboBoxItem Content="Item 1"/>
+			<ComboBoxItem Content="Item 2"/>
+			<ComboBoxItem Content="Item 3"/>
+			<ComboBoxItem Content="Item 4"/>
+		</ComboBox>
+	
+	</Grid>
+	
+</Window>

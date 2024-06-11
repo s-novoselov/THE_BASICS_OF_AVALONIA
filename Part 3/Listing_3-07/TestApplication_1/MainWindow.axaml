@@ -1,0 +1,67 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
+        x:Class="TestApplication_1.MainWindow"
+        Title="TestApplication_1">
+
+
+
+		<DockPanel>
+
+			<Menu DockPanel.Dock="Top">
+				<MenuItem Header="_FILE">
+					<MenuItem Header="_New"/>
+					<MenuItem Header="_Open...">
+						<MenuItem.Icon>
+							<Image Source="/Assets/Open.png"/>
+						</MenuItem.Icon>
+					</MenuItem>
+					<MenuItem Header="Save"/>
+				</MenuItem>
+				<MenuItem Header="EDIT">
+					<MenuItem Header="Copy"/>
+					<MenuItem Header="Paste"/>
+				</MenuItem>
+			</Menu>
+
+			<TabControl Grid.Row="1">
+				<TabItem Header="Tab 1">
+					<TextBlock Text="Tab Page 1"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"/>
+				</TabItem>
+				<TabItem Header="Tab2">
+					<Grid ColumnDefinitions="Auto"
+						RowDefinitions="Auto, Auto, Auto"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center">
+
+						<TextBlock Text="Tab Page 2"
+								   Margin="0,0,0,30"
+								   HorizontalAlignment="Center"
+								   Grid.Row="0"/>
+
+						<Button x:Name="OpenWindowButton"
+								HorizontalAlignment="Center"
+								Grid.Row="1"
+								Content="Open Window"/>
+
+						<Button x:Name="OpenModalWindowButton"
+								HorizontalAlignment="Center"
+								Grid.Row="2"
+								Content="Open Modal (Dialog) Window"/>
+
+					</Grid>
+				</TabItem>
+			</TabControl>
+			
+
+			
+			
+		</DockPanel>
+		
+		
+	
+</Window>
