@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        Width="560"
+		Height="300"
+        x:Class="SimpleDataGrid.MainWindow"
+        Title="SimpleDataGrid">
+
+	<Grid ColumnDefinitions="100, Auto"
+		  RowDefinitions="*"
+		  Margin="0,20,20,0">
+		<StackPanel Grid.Column="0"
+					Margin="5">
+			<Button x:Name="bAddPerson" 
+				Height="28">
+				Add Person
+			</Button>
+		</StackPanel>
+
+		<DockPanel Grid.Column="1" 
+					Margin="5">
+			<DataGrid AutoGenerateColumns="True"
+					  VerticalAlignment="Stretch"
+					  Items="{Binding $parent[Window].ThePeople}"/>
+		</DockPanel>
+	</Grid>
+	
+</Window>
