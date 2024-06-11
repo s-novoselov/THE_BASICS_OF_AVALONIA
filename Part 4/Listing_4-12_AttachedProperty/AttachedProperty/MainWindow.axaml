@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:AttachedProperty"
+		Width="300" 
+		Height="250"
+        x:Class="AttachedProperty.MainWindow"
+		local:AttachedProperties.ButtonHeight="50"
+        Title="AttachedProperty">
+	
+	<Grid ColumnDefinitions="250, 50">
+		<Button VerticalAlignment="Center"
+				HorizontalAlignment="Center"
+				Grid.Column="0"
+				Background="White"
+				Width="150"
+				Height="{Binding Path=(local:AttachedProperties.ButtonHeight), 
+                              RelativeSource={RelativeSource AncestorType=Window}}">
+			<Border Background="Red"
+				BorderBrush="Black"
+				BorderThickness="2"
+				CornerRadius="15"
+				Padding="4">
+				<TextBlock 
+					Foreground="White"
+					VerticalAlignment="Center"
+					HorizontalAlignment="Center">
+					Test Button
+				</TextBlock>
+			</Border>
+		</Button>
+
+		<Slider Minimum="50"
+				Maximum="180"
+				Grid.Column="1"
+				Orientation="Vertical"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Value="{Binding Path=(local:AttachedProperties.ButtonHeight), 
+                              Mode=TwoWay, 
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+				Height="150"
+				Width="50"/>		
+	</Grid>
+</Window>

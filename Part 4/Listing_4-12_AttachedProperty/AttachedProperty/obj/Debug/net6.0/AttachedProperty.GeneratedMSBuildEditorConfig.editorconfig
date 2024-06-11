@@ -1,0 +1,20 @@
+is_global = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AttachedProperty
+build_property.ProjectDir = d:\Documents_Examles\MyStud\МЕТОДЫ!!!!!!!!!!!111]\2022\Avalonia\Пособие\вихідний код\Part 4\Listing_4-12_AttachedProperty\AttachedProperty\
+
+[d:/Documents_Examles/MyStud/МЕТОДЫ\!\!\!\!\!\!\!\!\!\!\!111\]/2022/Avalonia/Пособие/вихідний код/Part 4/Listing_4-12_AttachedProperty/AttachedProperty/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[d:/Documents_Examles/MyStud/МЕТОДЫ\!\!\!\!\!\!\!\!\!\!\!111\]/2022/Avalonia/Пособие/вихідний код/Part 4/Listing_4-12_AttachedProperty/AttachedProperty/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
