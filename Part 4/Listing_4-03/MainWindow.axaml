@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="150"
+        x:Class="BindingAvalonia.MainWindow"
+        Title="BindingAvalonia">
+
+	<Window.Resources>
+		<x:String x:Key="TheResource">This is the Window's resource</x:String>
+	</Window.Resources>
+	
+	<Grid RowDefinitions="Auto, Auto, *" Margin="5">
+		<TextBlock Text="Example #3 &#10;Binding.Source:"
+				   HorizontalAlignment="Left"
+				   Margin="10,3"
+				   FontWeight="Bold"/>
+		<TextBlock Text="{}Text={Binding Source={StaticResource TheResource}}"
+				   FontSize="11"
+				   Grid.Row="1"
+				   Margin="10,3"
+				   HorizontalAlignment="Left"/>
+		<TextBlock Text="{Binding Source={StaticResource TheResource}}"
+				   Grid.Row="2"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Bottom"
+				   Margin="0,0,0,20"/>
+	</Grid>
+
+</Window>

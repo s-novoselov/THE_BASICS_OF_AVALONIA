@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="150"
+        x:Class="BindingAvalonia.MainWindow"
+        Title="BindingAvalonia">
+
+	<Grid RowDefinitions="Auto, Auto, *" Margin="5">
+		<TextBlock Text="Example #6 &#10;Binding with RelativeSource &#10;Mode=FindAncestor and AncestorType:"
+				   HorizontalAlignment="Left"
+				   Margin="10,3"
+				   FontWeight="Bold"/>
+		<TextBlock Text="{}Text={Binding Path=Tag, &#10;RelativeSource={RelativeSource AncestorType=Grid}}"
+				   FontSize="11"
+				   Grid.Row="1"
+				   Margin="10,3"
+				   HorizontalAlignment="Left"/>
+		<Grid Grid.Row="2"
+            Tag="This is the first Grid ancestor tag"
+            HorizontalAlignment="Center"
+                     VerticalAlignment="Bottom"
+                     Margin="0,0,0,20">
+			<StackPanel>
+				<TextBlock Text="{Binding Path=Tag, RelativeSource={RelativeSource AncestorType=Grid}}"/>
+			</StackPanel>
+		</Grid>
+	</Grid>
+
+</Window>

@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="150"
+        x:Class="BindingAvalonia.MainWindow"
+        Title="BindingAvalonia">
+
+	<Grid RowDefinitions="Auto, Auto, *" Margin="5">
+		<TextBlock Text="Example #5 &#10;Binding with RelativeSource &#10;Mode=TemplatedParent:"
+				   HorizontalAlignment="Left"
+				   Margin="10,3"
+				   FontWeight="Bold"/>
+		<TextBlock Text="{}Text={Binding Path=Tag, &#10;RelativeSource={RelativeSource TemplatedParent}}"
+				   FontSize="11"
+				   Grid.Row="1"
+				   Margin="10,3"
+				   HorizontalAlignment="Left"/>
+		<TemplatedControl Tag="This is Control's Tag"
+						  Grid.Row="2"
+						  HorizontalAlignment="Center"
+						  VerticalAlignment="Bottom"
+						  Margin="0,0,0,20">
+			<TemplatedControl.Template>
+				<ControlTemplate>
+					<TextBlock Text="{Binding Path=Tag, RelativeSource={RelativeSource TemplatedParent}}"/>
+				</ControlTemplate>
+			</TemplatedControl.Template>
+		</TemplatedControl>
+	</Grid>
+
+</Window>
