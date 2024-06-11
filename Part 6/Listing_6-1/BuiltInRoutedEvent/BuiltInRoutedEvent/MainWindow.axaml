@@ -1,0 +1,18 @@
+<Window x:Name="TheWindow"
+		xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="BuiltInRoutedEvent"
+        x:Class="BuiltInRoutedEvent.MainWindow"
+        Background="Red"
+        Width="200"
+        Height="200">	
+  <Grid x:Name="TheRootPanel"
+        Background="Green"
+        Margin="35">
+      <Border x:Name="TheBorder"
+              Background="Blue"
+              Margin="35"/>
+  </Grid>
+</Window>
