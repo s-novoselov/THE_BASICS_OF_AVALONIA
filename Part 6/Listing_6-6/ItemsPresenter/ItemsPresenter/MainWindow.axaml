@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:ItemsPresenter"
+        Width="300"
+        Height="400"
+        x:Class="ItemsPresenter.MainWindow"
+        Title="ItemsPresenter">
+	<Window.Resources>
+		<local:ItemViewModel x:Key="TheViewModel"/>
+		
+		<DataTemplate x:Key="PersonDataTemplate">
+			<Border Background="WhiteSmoke"
+					Margin="3">
+				<Grid ColumnDefinitions="50, 250">
+					<Image Source="/Assets/Codicons-Account.png"
+						Grid.Column="0"
+						Width="40"
+						Height="40"
+						Margin="5"/>
+					<Grid Grid.Column="1"
+						Margin="5,0"
+						  HorizontalAlignment="Stretch"
+						VerticalAlignment="Center"
+						RowDefinitions="Auto, Auto">
+						<TextBlock Grid.Row="0" Text="{Binding Path=FirstName, StringFormat='FirstName: {0}'}"/>
+						<TextBlock Grid.Row="1" Text="{Binding Path=LastName, StringFormat='LastName: {0}'}"/>
+					</Grid>
+				</Grid>
+			</Border>
+		</DataTemplate>
+
+		<DataTemplate x:Key="TestViewModelDataTemplate">
+			<Grid RowDefinitions="*, Auto, Auto">
+				<ItemsPresenter Items="{Binding Path=People}"
+								ItemTemplate="{StaticResource PersonDataTemplate}">
+					<ItemsPresenter.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel Orientation="Vertical"/>
+						</ItemsPanelTemplate>
+					</ItemsPresenter.ItemsPanel>
+				</ItemsPresenter>
+				<TextBlock Text="{Binding Path=NumberOfPeople, StringFormat='Number of People: {0}'}"
+						   Grid.Row="1"
+						   HorizontalAlignment="Left"
+						   Margin="10"/>
+				<Button Content="Remove Last"
+						IsEnabled="{Binding Path=CanRemoveLast}"
+						Command="{Binding Path=RemoveLast}"
+						Grid.Row="2"
+						HorizontalAlignment="Right"
+						Margin="10"/>
+			</Grid>
+		</DataTemplate>
+		
+	</Window.Resources>
+
+	<ContentPresenter Content="{StaticResource TheViewModel}"
+				  ContentTemplate="{StaticResource TestViewModelDataTemplate}"
+				  Margin="10"/>
+
+</Window>
