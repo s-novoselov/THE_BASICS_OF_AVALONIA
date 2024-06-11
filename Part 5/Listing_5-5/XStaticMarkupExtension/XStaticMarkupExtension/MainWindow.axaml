@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="100"
+        Height="180"
+        x:Class="XStaticMarkupExtension.MainWindow"
+		xmlns:dep1="clr-namespace:DependencyProject;assembly=DependencyProject"
+        xmlns:local="clr-namespace:XStaticMarkupExtension"
+        Title="XStaticMarkupExtension">
+	<StackPanel HorizontalAlignment="Center"
+				VerticalAlignment="Center">
+		<Border Width="70"
+				Height="30"
+				Background="{x:Static dep1:DependencyProjectStaticBrushes.RedBrush}"
+				Margin="5" />
+		<Border Width="70"
+			Height="30"
+			Background="{x:Static local:LocalProjectStaticBrushes.GreenBrush}"
+			Margin="5" />
+	</StackPanel>
+</Window>

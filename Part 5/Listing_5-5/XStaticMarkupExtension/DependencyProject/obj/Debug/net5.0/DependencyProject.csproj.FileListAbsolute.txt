@@ -1,0 +1,11 @@
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\bin\Debug\net5.0\DependencyProject.deps.json
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\bin\Debug\net5.0\DependencyProject.dll
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\bin\Debug\net5.0\ref\DependencyProject.dll
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\bin\Debug\net5.0\DependencyProject.pdb
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\DependencyProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\DependencyProject.AssemblyInfoInputs.cache
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\DependencyProject.AssemblyInfo.cs
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\DependencyProject.csproj.CoreCompileInputs.cache
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\DependencyProject.dll
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\ref\DependencyProject.dll
+C:\Users\serg\source\repos\XStaticMarkupExtension\DependencyProject\obj\Debug\net5.0\DependencyProject.pdb
