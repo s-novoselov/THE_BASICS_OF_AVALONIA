@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:dep1="clr-namespace:DependencyProject_1;assembly=DependencyProject_1"
+        xmlns:dep1_sub_Folder="clr-namespace:DependencyProject_1.SubFolder;assembly=DependencyProject_1"
+        xmlns:local="clr-namespace:XAMLNamespace"
+		xmlns:dep2="https://avaloniademos.com/xaml"
+        Width="300" 
+		Height="450"
+        x:Class="XAMLNamespace.MainWindow"
+        Title="XAMLNamespace">
+	
+	<StackPanel HorizontalAlignment="Center"
+				VerticalAlignment="Center">
+		<dep1:RedLamp/>
+		<dep1_sub_Folder:BlueLamp/>
+		<dep2:YellowLamp/>
+		<dep2:GreenLamp/>
+		<local:Rack/>
+	
+	</StackPanel>
+	
+</Window>

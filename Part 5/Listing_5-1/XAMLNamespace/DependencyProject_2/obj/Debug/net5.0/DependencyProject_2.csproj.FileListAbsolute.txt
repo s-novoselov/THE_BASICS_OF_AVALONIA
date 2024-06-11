@@ -1,0 +1,12 @@
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\bin\Debug\net5.0\DependencyProject_2.deps.json
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\bin\Debug\net5.0\DependencyProject_2.dll
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\bin\Debug\net5.0\ref\DependencyProject_2.dll
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\bin\Debug\net5.0\DependencyProject_2.pdb
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.csproj.AssemblyReference.cache
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.AssemblyInfoInputs.cache
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.AssemblyInfo.cs
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.csproj.CoreCompileInputs.cache
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.dll
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\ref\DependencyProject_2.dll
+C:\Users\serg\source\repos\XAMLNamespace\DependencyProject_2\obj\Debug\net5.0\DependencyProject_2.pdb
